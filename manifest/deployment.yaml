@@ -16,7 +16,7 @@ spec:
         app: react-boilerplate-depl
     spec:
       containers:
-      - image: vuthehuyt61/react-vite-boilerplate:v1 
+      - image: vuthehuyt61/react-vite-boilerplate:v2 
         imagePullPolicy: Always
         name: react-boilerplate
         ports:
