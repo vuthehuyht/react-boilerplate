@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: react-boilerplate-depl
+  name: react-boilerplate-depl
+  namespace: default 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: react-boilerplate-depl
+  template:
+    metadata:
+      labels:
+        app: react-boilerplate-depl
+    spec:
+      containers:
+      - image: vuthehuyt61/react-vite-boilerplate:v1 
+        imagePullPolicy: Always
+        name: react-boilerplate
+        ports:
+        - containerPort: 80
